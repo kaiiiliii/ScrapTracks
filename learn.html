@@ -1,0 +1,203 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Learning Waste</title>
+
+  <!-- Link stylesheets here! -->
+  <!-- The order of the link tags is the order in which styles are applied -->
+  <!-- If you want to override Bootstrap styling, link your own stylesheet AFTER bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- Import Google Fonts (https://fonts.google.com/) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    /* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  color: black;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+  </style>
+  <!--<style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            color: black
+        }
+        
+        .html {
+            box-sizing: border-box;
+        }
+        .column{
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        .card{
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            margin: 8px;
+            margin-bottom: 20px;
+            color:black;
+        }
+        .container{
+            padding: 0 16px;
+            margin-top: 10px;
+        }
+        .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .title{
+            color: grey;
+        }  
+</style>-->
+
+  </head>
+  <body>
+    <div class="container-fluid page">
+        <!-- navigation -->
+        <div class="nav fixed-top">
+          <img src="https://i.imgur.com/HNIbH7M.png" height=110px style="padding: 20px 30px 20px"/>
+            <ul class="menu">
+                <li class="menu-item"><a href="index.html">HOME</a></li>
+                <li class="menu-item"><a href="add.html">LOG MY SCRAPS</a></li>
+                <li class="menu-item"><a href="view.html">SCRAP SUMMARY</a></li>
+                <li class="menu-item"><a href="learn.html">LEARN MORE</a></li>
+            </ul>
+        </div>
+     
+      <h1>Know Your Scrap</h1>
+      <h3>Learn about the truth behind your every day meal waste and how it impacts the environment.</h3>
+
+      <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+            <h2>What is ScrapTracks?</h2>
+            <img src="https://cdn.pixabay.com/photo/2015/04/06/10/31/compost-709020__480.jpg" width=100% height=auto style="padding: 10px 0px 10px"/>
+            <p>ScrapTracks is a webapp that allows you to record the trash you accumulate from making and eating meals. With our app, you can input the weights of your waste in different categories: Compostables, Recyclables, and Other. By tracking your waste and reading up on the effects of excessive food waste on our environment, we hope you can become more aware of what you eat and throw away on a daily basis.</p>
+          </div>
+          <div class="card">
+            <h2>What Can I Compost?</h2>
+            <img src="https://cdn.pixabay.com/photo/2015/04/06/10/31/compost-709020__480.jpg" width=100% height=auto style="padding: 10px 0px 10px" />
+            <p>There are two categories of what you can compost: Greens and Browns.</p>
+          </div>
+          <div class="card">
+            <h2>What Can I Recycle?</h2>
+            <img src="https://cdn.pixabay.com/photo/2017/09/08/18/20/garbage-2729608_1280.jpg" width=100% height=auto style="padding: 10px 0px 10px"/>
+            <p></p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>About Us</h2>
+            <p>We are a group of students from different universities but share the same mission of saving the earth. We noticed that in our dining halls at school, buckets of food are wasted. We want to bring more awareness to people about the importance of reducing food waste. Therefore, we created this platform, Scraps Trackers, where you can log the food waste you have every day and learn its impact on the environment.</p>
+            
+          </div>
+          <div class="card">
+            <h2>Next Steps for ScrapTracks</h2>
+            <p>We want to expand it to record plastic usage and waste. To tailor the app to educate more people from different age groups, we also want to include free lessons or blogs to share about the impact of food waste and plastic waste from our house's supply chain. We will also have tips on better preparing the precise amount of food and how we can deal with those waste properly.</p>
+          </div>
+          <div class="card">
+            <h3>FUN FACTS</h3>
+            <div class="fakeimg">Fruits and vegetables, plus roots and tubers have the highest wastage rates of any food.</div><br>
+            <div class="fakeimg">Global quantitative food waste per year is roughly 30 per cent for cereals, 40-50 per cent for root crops, fruits, and vegetables, 20 per cent for oilseeds, meat and dairy plus 30 per cent for fish.</div><br>
+            <div class="fakeimg">At the retail level, large quantities of food are wasted due to quality standards that over-emphasize appearance.</div>
+          </div>
+          <div class="card">
+            <h3>DO YOUR PART</h3>
+            <p>SAVE THE EARTH</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 3 cards in a row 
+      <div class="row">
+          <div class="column">
+          <div class="col-lg-4 d-flex align-items-stretch">
+              <div class="card">
+                <img src="https://s3.amazonaws.com/cake-corp-s3.trycake.com/wp-content/uploads/2019/11/food-waste-blog.jpg" alt="resource2" style="width:100%">
+                  <div class="container">
+                      <h2>WASTE PER CAPITA</h2>
+                      <p class="title">United Nations</p>
+                      <p>Per capita waste by consumers is between 95-115 kg a year in Europe and North America, 
+                          while consumers in sub-Saharan Africa, South and Southeastern Asia, each throw away 
+                          only 6-11 kg a year.</p>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </br>
+
+        <div class="column">
+          <div class="col-lg-4 d-flex align-items-stretch">
+              <div class="card">
+                <img src="https://s3.amazonaws.com/cake-corp-s3.trycake.com/wp-content/uploads/2019/11/food-waste-blog.jpg" alt="resource2" style="width:100%">
+                  <div class="container">
+                      <h2>WASTE PER CAPITA</h2>
+                      <p class="title">United Nations</p>
+                      <p>Per capita waste by consumers is between 95-115 kg a year in Europe and North America, 
+                          while consumers in sub-Saharan Africa, South and Southeastern Asia, each throw away 
+                          only 6-11 kg a year.</p>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </br>
+    </div>-->
+    <a href="index.html" class="btn btn-primary mb1 bg-olive">Home</a>
+		<a href="add.html" class="btn btn-primary mb1 bg-olive">Log Another Meal</a>
+    </div>
+
+    
+	<!-- Place all script tags at the bottom of the body for best loading performance -->
+	<!-- Used to embed client side JavaScript -->
+  <script src="script.js"></script>
+  <!-- Import JavaScript libraries (used to connect to the backend) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+  <title>ScrapTracks</title>
+  
+  <!-- Link stylesheets here! -->
+  <!-- The order of the link tags is the order in which styles are applied -->
+  <!-- If you want to override Bootstrap styling, link your own stylesheet AFTER bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!-- Import Google Fonts (https://fonts.google.com/) -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="container-fluid page">
+          <!-- navigation -->
+          <div class="nav fixed-top">
+            <img src="https://i.imgur.com/HNIbH7M.png" height=110px style="padding: 20px 30px 20px"/>
+            <ul class="menu">
+              <li class="menu-item"><a href="index.html">HOME</a></li>
+              <li class="menu-item"><a href="add.html">LOG MY SCRAPS</a></li>
+              <li class="menu-item"><a href="view.html">SCRAP SUMMARY</a></li>
+              <li class="menu-item"><a href="learn.html">LEARN MORE</a></li>
+            </ul>
+          </div>
+
+    <h1>Track Your Scraps</h1>
+    <h3>Enter the weights (in ounces) of your meal's waste by category</h3>
+    <h5>Visit the "Learn More" tab to find out what's compostable and what's recyclable!</h5>
+    <!-- Add form that connects to the backend url 'add' (which is a POST method, so this si the information that is sent to the Python function) -->
+		<form id="add-log-form" method="POST" action="/add">
+      <!-- the 'name' attribute is what the variable is in Python -->
+      <label for="compost">Compostable Weight</label>
+      <input type="number" step="0.01" min="0" value="0.00" placeholder="0.00" class="form-control" name="compost" required/>
+      <br/>
+      <label for="recycle">Recyclable Weight </label>
+      <input type="number" step="0.01" min="0" value="0.00" placeholder="0.00" class="form-control" name="recycle" required/>
+      <br/>
+      <label for="other">Other - Stuff you can't compost or recycle</label>
+      <input type="number" step="0.01" min="0" value="0.00" placeholder="0.00" class="form-control" name="other" required/>
+      <br/>
+      <label for="date">Date</label>
+      <!--<input type="date" class="form-control" id="date" name="date" required>-->
+      <input type="date" class="form-control" name="date" required>
+      <br/>
+
+      <!--
+        Dropdown
+      <label for="genre">Genre: </label>
+      <select class="form-control" name="genre" required>
+        The value attribute indicates what is sent when the form is submitted
+        <option value="romance">Romance</option>
+        <option value="comedy">Comedy</option>
+        <option value="mystery">Mystery</option>
+      </select>
+      <br/>
+      -->
+
+      <!-- Form buttons -->
+      <input class="btn btn-primary mb1 bg-olive" type="submit"/> 
+      <a id = "back-btn" href="index.html" class="btn btn-primary mb1 bg-olive">View Summary</a>
+      
+    </form>
+
+  </div>
+
+  <!-- Place all script tags at the bottom of the body -->
+  <!-- Used to embed client side JavaScript -->
+  <script src="script.js"></script>
+
+  <!-- Import JavaScript libraries (used to connect to the backend) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+
+</body>
+</html>

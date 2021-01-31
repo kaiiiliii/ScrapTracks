@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>ScrapTracks</title>
+
+	<!-- Link stylesheets here! -->
+	<!-- The order of the link tags is the order in which styles are applied -->
+	<!-- If you want to override Bootstrap styling, link your own stylesheet AFTER bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+  	<!-- Import Google Fonts (https://fonts.google.com/) -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	
+</head>
+
+<!-- onload attribute specifies a function that will run when page is loaded -->
+<!-- Calls our getResult function from script.js to fetch data from the backend -->
+<!-- TODO #2: Add the onload function (DONE)-->
+<body onload="getResult()">
+	<div class="container-fluid page">
+		<div class="nav fixed-top">
+			<img src="https://i.imgur.com/HNIbH7M.png" height=110px style="padding: 20px 30px 20px"/>
+			<ul class="menu">
+			  <li class="menu-item"><a href="index.html">HOME</a></li>
+			  <li class="menu-item"><a href="add.html">LOG MY SCRAPS</a></li>
+			  <li class="menu-item"><a href="view.html">SCRAP SUMMARY</a></li>
+			  <li class="menu-item"><a href="learn.html">LEARN MORE</a></li>
+			</ul>
+		  </div>
+		<h1>My Scraps</h1>
+		<!-- This is the table created in the view page -->
+		<div id="chart">
+		<iframe style="background: #f6f5f5;border: none;border-radius: 2px;" width="650" height="480" src="https://charts.mongodb.com/charts-wastetracker-qcmws/embed/charts?id=9530aebe-3baf-471c-af2a-c853a149be41&autoRefresh=60&theme=light"></iframe>
+		<iframe style="background: #f6f5f5;border: none;border-radius: 2px;" width="640" height="480" src="https://charts.mongodb.com/charts-wastetracker-qcmws/embed/charts?id=c1d5e15a-012b-40e9-a94a-b81667b9a955&autoRefresh=60&theme=light"></iframe>
+		</div>
+		<!--
+		<table class="table table-hover">
+			<th>Compostables</th>
+			<th>Recyclables</th> 
+			<th>Other</th>
+            <th>Date</th>
+			<tbody id="result_table">
+			</tbody>
+		</table>
+		-->
+		<br/>
+		 
+		<a href="index.html" class="btn btn-primary mb1 bg-olive">Home</a>
+		<a href="add.html" class="btn btn-primary mb1 bg-olive">Log Another Meal</a>
+		
+	</div>
+
+
+	<!-- Place all script tags at the bottom of the body for best loading performance -->
+	<!-- Used to embed client side JavaScript -->
+	<script src="script.js"></script>
+	<!-- Link Ajax library (used to connect to the backend) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Google Chart API-->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</body>
+
+</html>
